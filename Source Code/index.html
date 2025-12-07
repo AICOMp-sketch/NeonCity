@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoCity - Aesthetic 3D Experience</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-text">ENTERING NEOCITY</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <!-- 3D Canvas -->
+    <div id="canvas-container"></div>
+
+    <!-- Glow Lines -->
+    <div class="glow-line glow-line-top"></div>
+    <div class="glow-line glow-line-bottom"></div>
+
+    <!-- Header -->
+    <header class="overlay header">
+        <div class="logo">NEOCITY</div>
+        <nav class="nav">
+            <a href="#explore">Explore</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Content -->
+    <div class="overlay hero-content">
+        <h1 class="hero-title">Welcome to the<br><span>Future City</span></h1>
+        <p class="hero-subtitle">
+            Immerse yourself in a breathtaking neon-lit metropolis where 
+            dreams meet reality. Experience the aesthetic vibes of tomorrow, today.
+        </p>
+        <div class="cta-buttons">
+            <button class="btn btn-primary">Explore Now</button>
+            <button class="btn btn-secondary">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Side Info -->
+    <div class="overlay side-info">
+        <div class="stat">
+            <div class="stat-value" id="building-count">247</div>
+            <div class="stat-label">Buildings</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value" id="particle-count">5K</div>
+            <div class="stat-label">Particles</div>
+        </div>
+        <div class="stat">
+            <div class="stat-value">∞</div>
+            <div class="stat-label">Vibes</div>
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="overlay bottom-bar">
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll to Explore</span>
+        </div>
+        <div class="social-links">
+            <a href="#">✦</a>
+            <a href="#">◈</a>
+            <a href="#">◎</a>
+        </div>
+    </div>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
